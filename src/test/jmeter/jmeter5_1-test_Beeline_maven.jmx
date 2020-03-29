@@ -123,6 +123,74 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="ClickHouse" enabled="false">
+          <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="profileName" elementType="Argument">
+                <stringProp name="Argument.name">profileName</stringProp>
+                <stringProp name="Argument.value">TEST</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="runId" elementType="Argument">
+                <stringProp name="Argument.name">runId</stringProp>
+                <stringProp name="Argument.value">R001</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="chUrl" elementType="Argument">
+                <stringProp name="Argument.name">chUrl</stringProp>
+                <stringProp name="Argument.value">localhost:8123</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="chUser" elementType="Argument">
+                <stringProp name="Argument.name">chUser</stringProp>
+                <stringProp name="Argument.value">default</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="chPassword" elementType="Argument">
+                <stringProp name="Argument.name">chPassword</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="chDatabase" elementType="Argument">
+                <stringProp name="Argument.name">chDatabase</stringProp>
+                <stringProp name="Argument.value">default</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="samplersList" elementType="Argument">
+                <stringProp name="Argument.name">samplersList</stringProp>
+                <stringProp name="Argument.value">.*</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="useRegexForSamplerList" elementType="Argument">
+                <stringProp name="Argument.name">useRegexForSamplerList</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="recordSubSamples" elementType="Argument">
+                <stringProp name="Argument.name">recordSubSamples</stringProp>
+                <stringProp name="Argument.value">true</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="groupBy" elementType="Argument">
+                <stringProp name="Argument.name">groupBy</stringProp>
+                <stringProp name="Argument.value">false</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="groupByCountOrBatchSize" elementType="Argument">
+                <stringProp name="Argument.name">groupByCountOrBatchSize</stringProp>
+                <stringProp name="Argument.value">100</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="recordAdditionalDataLevel" elementType="Argument">
+                <stringProp name="Argument.name">recordAdditionalDataLevel</stringProp>
+                <stringProp name="Argument.value">info</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="classname">cloud.testload.jmeter.ClickHouseBackendListenerClient</stringProp>
+        </BackendListener>
+        <hashTree/>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
           <stringProp name="IfController.condition">${__jexl3(${__time(ss)}&lt;30)}</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>

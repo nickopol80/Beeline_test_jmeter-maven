@@ -32,6 +32,8 @@
                         <artifact>cloud.testload:jmeter.pack-listener:1.7</artifact>
                         <!--Throughput Shaping Timer-->
                         <artifact>kg.apc:jmeter-plugins-tst:2.5</artifact>
+						<!--ClickHouse-->
+						<artifact>cloud.testload:jmeter.pack-listener:1.7</artifact>
                     </jmeterExtensions>
 
                     <testPlanLibraries>
