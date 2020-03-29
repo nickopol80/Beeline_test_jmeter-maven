@@ -9,7 +9,7 @@
 
     <properties>
         <!-- Test name -->
-        <jmx>jmeter5_1-test_Beeline_web</jmx>
+        <jmx>jmeter5_1-test_Beeline_maven</jmx>
     </properties>
 
     <build>
